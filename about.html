@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - Travel Recommendation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('about_background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #111;
+    }
+
+    .nav-left img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .nav-right a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-right input[type="text"] {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .nav-right button {
+      padding: 6px 12px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .nav-right button:hover {
+      background-color: #039d63;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+    }
+
+    .social-bar {
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      gap: 20px;
+    }
+
+    .social-bar img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-bar img:hover {
+      transform: scale(1.1);
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 60px 80px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+      max-width: 800px;
+    }
+
+    .team-section {
+      margin-top: 50px;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .team-member img {
+      width: 100px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .team-member strong {
+      font-size: 18px;
+    }
+
+    .role {
+      display: block;
+      font-style: italic;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo">
+      Travel Recommendation
+    </div>
+    <div class="nav-right">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Page Layout -->
+  <div class="overlay">
+
+    <!-- Social Sidebar -->
+    <div class="social-bar">
+      <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>About Us</h1>
+      <p class="description">
+        Travel Recommendation is your go-to guide for discovering unforgettable destinations around the world.
+        We are passionate travelers, storytellers, and developers who believe that the best travel advice
+        comes from a mix of local insight and global curiosity.
+      </p>
+
+      <div class="team-section">
+        <h2>Meet the Team</h2>
+
+        <div class="team-member">
+          <img src="viktoria_guseva.jpg" alt="Viktoria Guseva">
+          <div>
+            <strong>Viktoria Guseva</strong>
+            <span class="role">Founder & Front-End Developer</span>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="ali_khan.jpg" alt="Ali Khan">
+          <div>
+            <strong>Ali Khan</strong>
+            <span class="role">Travel Content Specialist</span>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="maria_fernandez.jpg" alt="Maria Fernandez">
+          <div>
+            <strong>Maria Fernandez</strong>
+            <span class="role">UI/UX Designer</span>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="david_zhang.jpg" alt="David Zhang">
+          <div>
+            <strong>David Zhang</strong>
+            <span class="role">Back-End Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Results Container -->
+  </div>
+
+  <!-- Optional: Only needed if search logic is used here -->
+     <script src="travel_recommendation.js"></script>
+</body>
+</html>

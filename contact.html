@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<html>
+  <title>Contact Us - Travel Recommendation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('about_background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #111;
+    }
+
+    .nav-left img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #333;
+      font-weight: normal;
+    }
+
+    .nav-right a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-right input[type="text"] {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .nav-right button {
+      padding: 6px 12px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .nav-right button:not(.clear-btn) {
+      background-color: #04AA6D;
+    }
+
+    .nav-right button:not(.clear-btn):hover {
+      background-color: #039d63;
+    }
+
+    .clear-btn {
+      background-color: #888;
+    }
+
+    .clear-btn:hover {
+      background-color: #666;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+    }
+
+    .social-bar {
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      gap: 20px;
+    }
+
+    .social-bar img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-bar img:hover {
+      transform: scale(1.1);
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 60px 80px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    form {
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #04AA6D;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #039d63;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo">
+      Travel Recommendation
+    </div>
+    <div class="nav-right">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="overlay">
+
+    <!-- Social Sidebar -->
+    <div class="social-bar">
+      <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+
+    <!-- Contact Form Content -->
+    <div class="content">
+      <h1>Contact Us</h1>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
